@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "aC329h3AWN1UtBr631mCubRw6nkl7pq2FA1lqFy9k3ofb1OwRDW0XHXUUrYT5c5hpRTbJdV8v+AlQPzROoTE5w==",
+  "dgSpecHash": "xmjpVQpRPZOk0iiM4uQ8jh+QkpGa7BfM/qXSkacICWxA7MzZvO1X2UNMW4Qb7C5felRcxSRGLfuUlEfanirltw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lluuk\\source\\repos\\POSLyion\\POSLyion\\POSLyion.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Documentos\\POSLyion\\POSLyion\\POSLyion.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Contr\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\Contr\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\Contr\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\Contr\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.25\\microsoft.netcore.app.host.win-x64.6.0.25.nupkg.sha512"
+  ],
   "logs": []
 }
