@@ -1,4 +1,4 @@
-﻿namespace PosLyon
+﻿    namespace PosLyon
 {
     partial class Login
     {

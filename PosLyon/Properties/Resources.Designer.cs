@@ -153,6 +153,26 @@ namespace PosLyon.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap registro {
+            get {
+                object obj = ResourceManager.GetObject("registro", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap registro2 {
+            get {
+                object obj = ResourceManager.GetObject("registro2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap restablecer_la_contrasena {
             get {
                 object obj = ResourceManager.GetObject("restablecer-la-contrasena", resourceCulture);

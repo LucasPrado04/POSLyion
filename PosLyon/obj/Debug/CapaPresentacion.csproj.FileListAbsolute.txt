@@ -8,3 +8,21 @@ D:\Documentos\Visual Studio\source\repos\PosLyon\obj\Debug\CapaPresentacion.cspr
 D:\Documentos\Visual Studio\source\repos\PosLyon\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
 D:\Documentos\Visual Studio\source\repos\PosLyon\obj\Debug\PosLyon.exe
 D:\Documentos\Visual Studio\source\repos\PosLyon\obj\Debug\PosLyon.pdb
+D:\Documentos\POSLyion\PosLyon\obj\Debug\PosLyon.exe
+D:\Documentos\POSLyion\PosLyon\obj\Debug\PosLyon.pdb
+D:\Documentos\POSLyion\PosLyon\bin\Debug\PosLyon.exe.config
+D:\Documentos\POSLyion\PosLyon\bin\Debug\PosLyon.exe
+D:\Documentos\POSLyion\PosLyon\bin\Debug\PosLyon.pdb
+D:\Documentos\POSLyion\PosLyon\bin\Debug\CapaEntidad.dll
+D:\Documentos\POSLyion\PosLyon\bin\Debug\CapaNegocio.dll
+D:\Documentos\POSLyion\PosLyon\bin\Debug\CapaDatos.dll
+D:\Documentos\POSLyion\PosLyon\bin\Debug\CapaEntidad.pdb
+D:\Documentos\POSLyion\PosLyon\bin\Debug\CapaNegocio.pdb
+D:\Documentos\POSLyion\PosLyon\bin\Debug\CapaDatos.pdb
+D:\Documentos\POSLyion\PosLyon\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+D:\Documentos\POSLyion\PosLyon\obj\Debug\PosLyon.Login.resources
+D:\Documentos\POSLyion\PosLyon\obj\Debug\PosLyon.Properties.Resources.resources
+D:\Documentos\POSLyion\PosLyon\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+D:\Documentos\POSLyion\PosLyon\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+D:\Documentos\POSLyion\PosLyon\obj\Debug\CapaPresentacion.csproj.CopyComplete
+D:\Documentos\POSLyion\PosLyon\obj\Debug\PosLyon.Inicio.resources

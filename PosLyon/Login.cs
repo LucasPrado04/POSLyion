@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using CapaNegocio;
+using CapaEntidad;
 
 namespace PosLyon
 {
@@ -15,6 +17,26 @@ namespace PosLyon
         public Login()
         {
             InitializeComponent();
+        }
+
+        private void btningresar_Click(object sender, EventArgs e) {
+            // List<Usuario> TEST = new CN_Usuario().Listar();
+            // Creo un objeto de tipo Usuario que lista todos los usuarios de la base de datos y con método Lambda Where trae específicamente el que se indicó en el login
+            Usuario usuario = new CN_Usuario().Listar().Where(u => u.dni == textBox1.Text && u.clave == textBox2.Text).FirstOrDefault();
+            if(usuario == null) {
+                MessageBox.Show("No se encontró el usuario?", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            } else {
+                Inicio form = new Inicio();
+                form.Show();
+                this.Hide();
+                form.FormClosing += frm_closing;
+            }
+        }
+
+        private void frm_closing(object sender, FormClosingEventArgs e) {
+            textBox1.Text = "";
+            textBox2.Text = "";
+            this.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -74,23 +96,7 @@ namespace PosLyon
             
         }
 
-        private void btningresar_Click(object sender, EventArgs e)
-        {
-            // Cuando se presione el botón "Entrar", se oculta el formulario Login y se muestra el formulario Inicio o la pantalla principal.
-            Inicio form = new Inicio();
-            form.Show();
-            this.Hide();
-            //if (textBox1.Text == "Ingrese nombre de usuario" || textBox2.Text == "Ingrese contraseña")
-            //{
-            //    textBox3.Visible = true;
-            //    return;
-            //}
-            //else
-            //{
-            //    textBox3.Visible = false;
-            //    return;
-            //}
-        }
+   
 
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
