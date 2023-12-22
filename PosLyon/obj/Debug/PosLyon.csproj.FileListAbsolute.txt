@@ -1,0 +1,10 @@
+C:\Users\Usuario\source\repos\POSLyion\PosLyon\PosLyon\bin\Debug\PosLyon.exe.config
+C:\Users\Usuario\source\repos\POSLyion\PosLyon\PosLyon\bin\Debug\PosLyon.exe
+C:\Users\Usuario\source\repos\POSLyion\PosLyon\PosLyon\bin\Debug\PosLyon.pdb
+C:\Users\Usuario\source\repos\POSLyion\PosLyon\PosLyon\obj\Debug\PosLyon.csproj.AssemblyReference.cache
+C:\Users\Usuario\source\repos\POSLyion\PosLyon\PosLyon\obj\Debug\PosLyon.Form1.resources
+C:\Users\Usuario\source\repos\POSLyion\PosLyon\PosLyon\obj\Debug\PosLyon.Properties.Resources.resources
+C:\Users\Usuario\source\repos\POSLyion\PosLyon\PosLyon\obj\Debug\PosLyon.csproj.GenerateResource.cache
+C:\Users\Usuario\source\repos\POSLyion\PosLyon\PosLyon\obj\Debug\PosLyon.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\source\repos\POSLyion\PosLyon\PosLyon\obj\Debug\PosLyon.exe
+C:\Users\Usuario\source\repos\POSLyion\PosLyon\PosLyon\obj\Debug\PosLyon.pdb

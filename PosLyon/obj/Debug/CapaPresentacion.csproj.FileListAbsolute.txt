@@ -1,0 +1,10 @@
+D:\Documentos\Visual Studio\source\repos\PosLyon\bin\Debug\PosLyon.exe.config
+D:\Documentos\Visual Studio\source\repos\PosLyon\bin\Debug\PosLyon.exe
+D:\Documentos\Visual Studio\source\repos\PosLyon\bin\Debug\PosLyon.pdb
+D:\Documentos\Visual Studio\source\repos\PosLyon\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+D:\Documentos\Visual Studio\source\repos\PosLyon\obj\Debug\PosLyon.Login.resources
+D:\Documentos\Visual Studio\source\repos\PosLyon\obj\Debug\PosLyon.Properties.Resources.resources
+D:\Documentos\Visual Studio\source\repos\PosLyon\obj\Debug\CapaPresentacion.csproj.GenerateResource.cache
+D:\Documentos\Visual Studio\source\repos\PosLyon\obj\Debug\CapaPresentacion.csproj.CoreCompileInputs.cache
+D:\Documentos\Visual Studio\source\repos\PosLyon\obj\Debug\PosLyon.exe
+D:\Documentos\Visual Studio\source\repos\PosLyon\obj\Debug\PosLyon.pdb
