@@ -13,4 +13,4 @@ namespace CapaNegocio
         public List<Usuario> Listar() {
             return obj_cd_usuario.Listar();
         }
-}
+    }

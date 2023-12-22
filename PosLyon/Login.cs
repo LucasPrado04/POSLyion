@@ -76,6 +76,7 @@ namespace PosLyon
 
         private void btningresar_Click(object sender, EventArgs e)
         {
+            // Cuando se presione el botón "Entrar", se oculta el formulario Login y se muestra el formulario Inicio o la pantalla principal.
             Inicio form = new Inicio();
             form.Show();
             this.Hide();
