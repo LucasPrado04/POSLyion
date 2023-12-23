@@ -36,6 +36,10 @@ C:\Users\Usuario\source\repos\POSLyionnn\PosLyon\bin\Debug\CapaEntidad.pdb
 C:\Users\Usuario\source\repos\POSLyionnn\PosLyon\bin\Debug\CapaNegocio.pdb
 C:\Users\Usuario\source\repos\POSLyionnn\PosLyon\bin\Debug\CapaDatos.pdb
 C:\Users\Usuario\source\repos\POSLyionnn\PosLyon\obj\Debug\CapaPresentacion.csproj.AssemblyReference.cache
+<<<<<<< HEAD
+=======
+C:\Users\Usuario\source\repos\POSLyionnn\PosLyon\obj\Debug\PosLyon.Inicio.resources
+>>>>>>> 208343eed0fe1d8958f5c927c4f7b4a7b3564a2c
 C:\Users\Usuario\source\repos\POSLyionnn\PosLyon\obj\Debug\PosLyon.Login.resources
 C:\Users\Usuario\source\repos\POSLyionnn\PosLyon\obj\Debug\PosLyon.Properties.Resources.resources
 C:\Users\Usuario\source\repos\POSLyionnn\PosLyon\obj\Debug\PosLyon.registro.resources
@@ -44,4 +48,8 @@ C:\Users\Usuario\source\repos\POSLyionnn\PosLyon\obj\Debug\CapaPresentacion.cspr
 C:\Users\Usuario\source\repos\POSLyionnn\PosLyon\obj\Debug\CapaPresentacion.csproj.CopyComplete
 C:\Users\Usuario\source\repos\POSLyionnn\PosLyon\obj\Debug\PosLyon.exe
 C:\Users\Usuario\source\repos\POSLyionnn\PosLyon\obj\Debug\PosLyon.pdb
+<<<<<<< HEAD
 C:\Users\Usuario\source\repos\POSLyionnn\PosLyon\obj\Debug\PosLyon.Main.resources
+=======
+D:\Documentos\POSLyion\PosLyon\obj\Debug\PosLyon.registro.resources
+>>>>>>> 208343eed0fe1d8958f5c927c4f7b4a7b3564a2c
