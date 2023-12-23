@@ -24,12 +24,16 @@ namespace PosLyon
             // Creo un objeto de tipo Usuario que lista todos los usuarios de la base de datos y con método Lambda Where trae específicamente el que se indicó en el login
             Usuario usuario = new CN_Usuario().Listar().Where(u => u.dni == textBox1.Text && u.clave == textBox2.Text).FirstOrDefault();
             if(usuario == null) {
+
                 MessageBox.Show("No se encontró el usuario", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+
             } else {
+
                 Inicio form = new Inicio();
                 form.Show();
                 this.Hide();
                 form.FormClosing += frm_closing;
+
             }
         }
 
