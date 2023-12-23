@@ -26,7 +26,7 @@ namespace PosLyon
             if(usuario == null) {
                 MessageBox.Show("No se encontró el usuario?", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             } else {
-                Inicio form = new Inicio();
+                Main form = new Main();
                 form.Show();
                 this.Hide();
                 form.FormClosing += frm_closing;
@@ -123,6 +123,12 @@ namespace PosLyon
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form registro = new registro();
+            registro.Show();
         }
     }
 }
