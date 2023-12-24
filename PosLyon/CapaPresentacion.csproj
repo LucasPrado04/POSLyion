@@ -46,40 +46,103 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Compra.cs">
+    <Compile Include="frmCategoria.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Compra.Designer.cs">
-      <DependentUpon>Compra.cs</DependentUpon>
+    <Compile Include="frmCategoria.Designer.cs">
+      <DependentUpon>frmCategoria.cs</DependentUpon>
     </Compile>
-    <Compile Include="Main.cs">
+    <Compile Include="frmCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
+    <Compile Include="frmCliente.Designer.cs">
+      <DependentUpon>frmCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
+    <Compile Include="frmCompra.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
+    <Compile Include="frmCompra.Designer.cs">
+      <DependentUpon>frmCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmConfiguracion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmConfiguracion.Designer.cs">
+      <DependentUpon>frmConfiguracion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProducto.Designer.cs">
+      <DependentUpon>frmProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUsuario.Designer.cs">
+      <DependentUpon>frmUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="registro.cs">
+    <Compile Include="frmProveedor.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="registro.Designer.cs">
-      <DependentUpon>registro.cs</DependentUpon>
+    <Compile Include="frmProveedor.Designer.cs">
+      <DependentUpon>frmProveedor.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Compra.resx">
-      <DependentUpon>Compra.cs</DependentUpon>
+    <Compile Include="frmRegistro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegistro.Designer.cs">
+      <DependentUpon>frmRegistro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmReporte.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmReporte.Designer.cs">
+      <DependentUpon>frmReporte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVenta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVenta.Designer.cs">
+      <DependentUpon>frmVenta.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmCategoria.resx">
+      <DependentUpon>frmCategoria.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Main.resx">
-      <DependentUpon>Main.cs</DependentUpon>
+    <EmbeddedResource Include="frmCliente.resx">
+      <DependentUpon>frmCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
+    <EmbeddedResource Include="frmCompra.resx">
+      <DependentUpon>frmCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmConfiguracion.resx">
+      <DependentUpon>frmConfiguracion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProducto.resx">
+      <DependentUpon>frmProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUsuario.resx">
+      <DependentUpon>frmUsuario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -91,8 +154,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="registro.resx">
-      <DependentUpon>registro.cs</DependentUpon>
+    <EmbeddedResource Include="frmProveedor.resx">
+      <DependentUpon>frmProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegistro.resx">
+      <DependentUpon>frmRegistro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmReporte.resx">
+      <DependentUpon>frmReporte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVenta.resx">
+      <DependentUpon>frmVenta.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

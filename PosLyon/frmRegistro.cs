@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PosLyon
 {
-    public partial class registro : Form
+    public partial class frmRegistro : Form
     {
-        public registro()
+        public frmRegistro()
         {
             InitializeComponent();
         }

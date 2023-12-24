@@ -12,9 +12,9 @@ using CapaEntidad;
 
 namespace PosLyon
 {
-    public partial class Login : Form
+    public partial class frmLogin : Form
     {
-        public Login()
+        public frmLogin()
         {
             InitializeComponent();
         }
@@ -23,12 +23,13 @@ namespace PosLyon
             // List<Usuario> TEST = new CN_Usuario().Listar();
             // Creo un objeto de tipo Usuario que lista todos los usuarios de la base de datos y con método Lambda Where trae específicamente el que se indicó en el login
             Usuario usuario = new CN_Usuario().Listar().Where(u => u.dni == textBox1.Text && u.clave == textBox2.Text).FirstOrDefault();
-            if(usuario == null) {
+
+            if (usuario == null) {
 
                 MessageBox.Show("No se encontró el usuario", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
             } else {
-                Main form = new Main(usuario);
+                frmMain form = new frmMain(usuario);
                 form.Show();
                 this.Hide();
                 form.FormClosing += frm_closing;
@@ -130,7 +131,7 @@ namespace PosLyon
 
         private void button3_Click(object sender, EventArgs e)
         {
-            Form registro = new registro();
+            Form registro = new frmRegistro();
             registro.Show();
         }
     }

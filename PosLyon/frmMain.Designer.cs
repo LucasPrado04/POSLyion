@@ -1,6 +1,6 @@
 ﻿namespace PosLyon
 {
-    partial class Main
+    partial class frmMain
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.panel1 = new System.Windows.Forms.Panel();
             this.button2 = new System.Windows.Forms.Button();
             this.rest = new System.Windows.Forms.Button();
@@ -40,15 +41,33 @@
             this.maximizar = new System.Windows.Forms.Button();
             this.exit = new System.Windows.Forms.Button();
             this.restaurar = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblusuario = new System.Windows.Forms.Label();
+            this.menu_producto = new System.Windows.Forms.Button();
+            this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
+            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
+            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.menu_categoria = new System.Windows.Forms.Button();
+            this.menu_cliente = new System.Windows.Forms.Button();
+            this.menu_proveedor = new System.Windows.Forms.Button();
+            this.menu_usuario = new System.Windows.Forms.Button();
             this.menu_config = new System.Windows.Forms.Button();
             this.menu_registro = new System.Windows.Forms.Button();
             this.menu_stock = new System.Windows.Forms.Button();
             this.menu_venta = new System.Windows.Forms.Button();
             this.menu_compra = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblusuario = new System.Windows.Forms.Label();
-            this.menu_producto = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
+            this.bindingNavigator1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -231,119 +250,6 @@
             this.restaurar.TabIndex = 0;
             this.restaurar.UseVisualStyleBackColor = true;
             // 
-            // menu_config
-            // 
-            this.menu_config.AutoSize = true;
-            this.menu_config.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(5)))), ((int)(((byte)(33)))));
-            this.menu_config.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.menu_config.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(20)))), ((int)(((byte)(75)))));
-            this.menu_config.FlatAppearance.BorderSize = 0;
-            this.menu_config.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(61)))), ((int)(((byte)(151)))));
-            this.menu_config.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(20)))), ((int)(((byte)(75)))));
-            this.menu_config.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.menu_config.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold);
-            this.menu_config.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.menu_config.Image = global::PosLyon.Properties.Resources.config;
-            this.menu_config.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.menu_config.Location = new System.Drawing.Point(0, 283);
-            this.menu_config.Name = "menu_config";
-            this.menu_config.Size = new System.Drawing.Size(276, 60);
-            this.menu_config.TabIndex = 6;
-            this.menu_config.Text = "Config.";
-            this.menu_config.UseVisualStyleBackColor = false;
-            this.menu_config.Visible = false;
-            this.menu_config.Click += new System.EventHandler(this.menu_config_Click);
-            // 
-            // menu_registro
-            // 
-            this.menu_registro.AutoSize = true;
-            this.menu_registro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(5)))), ((int)(((byte)(33)))));
-            this.menu_registro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.menu_registro.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(20)))), ((int)(((byte)(75)))));
-            this.menu_registro.FlatAppearance.BorderSize = 0;
-            this.menu_registro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(61)))), ((int)(((byte)(151)))));
-            this.menu_registro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(20)))), ((int)(((byte)(75)))));
-            this.menu_registro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.menu_registro.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold);
-            this.menu_registro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.menu_registro.Image = global::PosLyon.Properties.Resources.regede;
-            this.menu_registro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.menu_registro.Location = new System.Drawing.Point(0, 223);
-            this.menu_registro.Name = "menu_registro";
-            this.menu_registro.Size = new System.Drawing.Size(276, 60);
-            this.menu_registro.TabIndex = 5;
-            this.menu_registro.Text = "Registro";
-            this.menu_registro.UseVisualStyleBackColor = false;
-            this.menu_registro.Visible = false;
-            this.menu_registro.Click += new System.EventHandler(this.rRegister_Click);
-            // 
-            // menu_stock
-            // 
-            this.menu_stock.AutoSize = true;
-            this.menu_stock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(5)))), ((int)(((byte)(33)))));
-            this.menu_stock.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.menu_stock.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(20)))), ((int)(((byte)(75)))));
-            this.menu_stock.FlatAppearance.BorderSize = 0;
-            this.menu_stock.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(61)))), ((int)(((byte)(151)))));
-            this.menu_stock.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(20)))), ((int)(((byte)(75)))));
-            this.menu_stock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.menu_stock.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold);
-            this.menu_stock.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.menu_stock.Image = global::PosLyon.Properties.Resources.stock;
-            this.menu_stock.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.menu_stock.Location = new System.Drawing.Point(0, 163);
-            this.menu_stock.Name = "menu_stock";
-            this.menu_stock.Size = new System.Drawing.Size(276, 60);
-            this.menu_stock.TabIndex = 4;
-            this.menu_stock.Text = "Stock";
-            this.menu_stock.UseVisualStyleBackColor = false;
-            this.menu_stock.Visible = false;
-            // 
-            // menu_venta
-            // 
-            this.menu_venta.AutoSize = true;
-            this.menu_venta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(5)))), ((int)(((byte)(33)))));
-            this.menu_venta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.menu_venta.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(20)))), ((int)(((byte)(75)))));
-            this.menu_venta.FlatAppearance.BorderSize = 0;
-            this.menu_venta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(61)))), ((int)(((byte)(151)))));
-            this.menu_venta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(20)))), ((int)(((byte)(75)))));
-            this.menu_venta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.menu_venta.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold);
-            this.menu_venta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.menu_venta.Image = global::PosLyon.Properties.Resources.vventa;
-            this.menu_venta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.menu_venta.Location = new System.Drawing.Point(0, 103);
-            this.menu_venta.Name = "menu_venta";
-            this.menu_venta.Size = new System.Drawing.Size(276, 60);
-            this.menu_venta.TabIndex = 3;
-            this.menu_venta.Text = "Venta";
-            this.menu_venta.UseVisualStyleBackColor = false;
-            this.menu_venta.Visible = false;
-            // 
-            // menu_compra
-            // 
-            this.menu_compra.AutoSize = true;
-            this.menu_compra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(5)))), ((int)(((byte)(33)))));
-            this.menu_compra.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.menu_compra.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(20)))), ((int)(((byte)(75)))));
-            this.menu_compra.FlatAppearance.BorderSize = 0;
-            this.menu_compra.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(61)))), ((int)(((byte)(151)))));
-            this.menu_compra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(20)))), ((int)(((byte)(75)))));
-            this.menu_compra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.menu_compra.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold);
-            this.menu_compra.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.menu_compra.Image = global::PosLyon.Properties.Resources.carrito_de_compras;
-            this.menu_compra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.menu_compra.Location = new System.Drawing.Point(0, 43);
-            this.menu_compra.Name = "menu_compra";
-            this.menu_compra.Size = new System.Drawing.Size(276, 60);
-            this.menu_compra.TabIndex = 2;
-            this.menu_compra.Text = "Compra";
-            this.menu_compra.UseVisualStyleBackColor = false;
-            this.menu_compra.Visible = false;
-            this.menu_compra.Click += new System.EventHandler(this.cCompra_Click);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -378,20 +284,342 @@
             this.menu_producto.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold);
             this.menu_producto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.menu_producto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.menu_producto.Location = new System.Drawing.Point(0, 343);
+            this.menu_producto.Location = new System.Drawing.Point(0, 283);
             this.menu_producto.Name = "menu_producto";
             this.menu_producto.Size = new System.Drawing.Size(276, 60);
             this.menu_producto.TabIndex = 7;
             this.menu_producto.Text = "Producto";
             this.menu_producto.UseVisualStyleBackColor = false;
             this.menu_producto.Visible = false;
-            this.menu_producto.Click += new System.EventHandler(this.button3_Click);
+            this.menu_producto.Click += new System.EventHandler(this.menu_producto_Click);
             // 
-            // Main
+            // bindingNavigator1
+            // 
+            this.bindingNavigator1.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.bindingNavigator1.CountItem = this.bindingNavigatorCountItem;
+            this.bindingNavigator1.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.bindingNavigator1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.bindingNavigatorMoveFirstItem,
+            this.bindingNavigatorMovePreviousItem,
+            this.bindingNavigatorSeparator,
+            this.bindingNavigatorPositionItem,
+            this.bindingNavigatorCountItem,
+            this.bindingNavigatorSeparator1,
+            this.bindingNavigatorMoveNextItem,
+            this.bindingNavigatorMoveLastItem,
+            this.bindingNavigatorSeparator2,
+            this.bindingNavigatorAddNewItem,
+            this.bindingNavigatorDeleteItem});
+            this.bindingNavigator1.Location = new System.Drawing.Point(0, 44);
+            this.bindingNavigator1.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
+            this.bindingNavigator1.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.bindingNavigator1.MoveNextItem = this.bindingNavigatorMoveNextItem;
+            this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
+            this.bindingNavigator1.Name = "bindingNavigator1";
+            this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
+            this.bindingNavigator1.Size = new System.Drawing.Size(800, 25);
+            this.bindingNavigator1.TabIndex = 9;
+            this.bindingNavigator1.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorAddNewItem
+            // 
+            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
+            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
+            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 22);
+            this.bindingNavigatorCountItem.Text = "de {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
+            // 
+            // bindingNavigatorDeleteItem
+            // 
+            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
+            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
+            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorDeleteItem.Text = "Eliminar";
+            // 
+            // bindingNavigatorMoveFirstItem
+            // 
+            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
+            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
+            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveFirstItem.Text = "Mover primero";
+            // 
+            // bindingNavigatorMovePreviousItem
+            // 
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMovePreviousItem.Text = "Mover anterior";
+            // 
+            // bindingNavigatorSeparator
+            // 
+            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorPositionItem
+            // 
+            this.bindingNavigatorPositionItem.AccessibleName = "Posición";
+            this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
+            this.bindingNavigatorPositionItem.Text = "0";
+            this.bindingNavigatorPositionItem.ToolTipText = "Posición actual";
+            // 
+            // bindingNavigatorSeparator1
+            // 
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
+            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
+            // 
+            // bindingNavigatorMoveNextItem
+            // 
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveNextItem.Text = "Mover siguiente";
+            // 
+            // bindingNavigatorMoveLastItem
+            // 
+            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
+            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
+            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(23, 22);
+            this.bindingNavigatorMoveLastItem.Text = "Mover último";
+            // 
+            // bindingNavigatorSeparator2
+            // 
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
+            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
+            // 
+            // menu_categoria
+            // 
+            this.menu_categoria.AutoSize = true;
+            this.menu_categoria.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(5)))), ((int)(((byte)(33)))));
+            this.menu_categoria.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.menu_categoria.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(20)))), ((int)(((byte)(75)))));
+            this.menu_categoria.FlatAppearance.BorderSize = 0;
+            this.menu_categoria.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(61)))), ((int)(((byte)(151)))));
+            this.menu_categoria.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(20)))), ((int)(((byte)(75)))));
+            this.menu_categoria.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.menu_categoria.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.menu_categoria.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.menu_categoria.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.menu_categoria.Location = new System.Drawing.Point(275, 304);
+            this.menu_categoria.Name = "menu_categoria";
+            this.menu_categoria.Size = new System.Drawing.Size(161, 39);
+            this.menu_categoria.TabIndex = 10;
+            this.menu_categoria.Text = "Categoria";
+            this.menu_categoria.UseVisualStyleBackColor = false;
+            this.menu_categoria.Visible = false;
+            this.menu_categoria.Click += new System.EventHandler(this.menu_categoria_Click);
+            // 
+            // menu_cliente
+            // 
+            this.menu_cliente.AutoSize = true;
+            this.menu_cliente.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(5)))), ((int)(((byte)(33)))));
+            this.menu_cliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.menu_cliente.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(20)))), ((int)(((byte)(75)))));
+            this.menu_cliente.FlatAppearance.BorderSize = 0;
+            this.menu_cliente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(61)))), ((int)(((byte)(151)))));
+            this.menu_cliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(20)))), ((int)(((byte)(75)))));
+            this.menu_cliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.menu_cliente.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.menu_cliente.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.menu_cliente.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.menu_cliente.Location = new System.Drawing.Point(0, 343);
+            this.menu_cliente.Name = "menu_cliente";
+            this.menu_cliente.Size = new System.Drawing.Size(276, 60);
+            this.menu_cliente.TabIndex = 11;
+            this.menu_cliente.Text = "Cliente";
+            this.menu_cliente.UseVisualStyleBackColor = false;
+            this.menu_cliente.Visible = false;
+            this.menu_cliente.Click += new System.EventHandler(this.menu_cliente_Click);
+            // 
+            // menu_proveedor
+            // 
+            this.menu_proveedor.AutoSize = true;
+            this.menu_proveedor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(5)))), ((int)(((byte)(33)))));
+            this.menu_proveedor.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.menu_proveedor.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(20)))), ((int)(((byte)(75)))));
+            this.menu_proveedor.FlatAppearance.BorderSize = 0;
+            this.menu_proveedor.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(61)))), ((int)(((byte)(151)))));
+            this.menu_proveedor.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(20)))), ((int)(((byte)(75)))));
+            this.menu_proveedor.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.menu_proveedor.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.menu_proveedor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.menu_proveedor.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.menu_proveedor.Location = new System.Drawing.Point(0, 403);
+            this.menu_proveedor.Name = "menu_proveedor";
+            this.menu_proveedor.Size = new System.Drawing.Size(276, 60);
+            this.menu_proveedor.TabIndex = 12;
+            this.menu_proveedor.Text = "Proveedor";
+            this.menu_proveedor.UseVisualStyleBackColor = false;
+            this.menu_proveedor.Visible = false;
+            this.menu_proveedor.Click += new System.EventHandler(this.menu_proveedor_Click);
+            // 
+            // menu_usuario
+            // 
+            this.menu_usuario.AutoSize = true;
+            this.menu_usuario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(5)))), ((int)(((byte)(33)))));
+            this.menu_usuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.menu_usuario.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(20)))), ((int)(((byte)(75)))));
+            this.menu_usuario.FlatAppearance.BorderSize = 0;
+            this.menu_usuario.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(61)))), ((int)(((byte)(151)))));
+            this.menu_usuario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(20)))), ((int)(((byte)(75)))));
+            this.menu_usuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.menu_usuario.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.menu_usuario.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.menu_usuario.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.menu_usuario.Location = new System.Drawing.Point(275, 484);
+            this.menu_usuario.Name = "menu_usuario";
+            this.menu_usuario.Size = new System.Drawing.Size(161, 39);
+            this.menu_usuario.TabIndex = 13;
+            this.menu_usuario.Text = "Usuario";
+            this.menu_usuario.UseVisualStyleBackColor = false;
+            this.menu_usuario.Visible = false;
+            this.menu_usuario.Click += new System.EventHandler(this.menu_usuario_Click);
+            // 
+            // menu_config
+            // 
+            this.menu_config.AutoSize = true;
+            this.menu_config.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(5)))), ((int)(((byte)(33)))));
+            this.menu_config.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.menu_config.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(20)))), ((int)(((byte)(75)))));
+            this.menu_config.FlatAppearance.BorderSize = 0;
+            this.menu_config.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(61)))), ((int)(((byte)(151)))));
+            this.menu_config.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(20)))), ((int)(((byte)(75)))));
+            this.menu_config.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.menu_config.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.menu_config.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.menu_config.Image = global::PosLyon.Properties.Resources.config;
+            this.menu_config.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.menu_config.Location = new System.Drawing.Point(0, 463);
+            this.menu_config.Name = "menu_config";
+            this.menu_config.Size = new System.Drawing.Size(276, 60);
+            this.menu_config.TabIndex = 6;
+            this.menu_config.Text = "Config.";
+            this.menu_config.UseVisualStyleBackColor = false;
+            this.menu_config.Visible = false;
+            this.menu_config.Click += new System.EventHandler(this.menu_config_Click);
+            // 
+            // menu_registro
+            // 
+            this.menu_registro.AutoSize = true;
+            this.menu_registro.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(5)))), ((int)(((byte)(33)))));
+            this.menu_registro.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.menu_registro.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(20)))), ((int)(((byte)(75)))));
+            this.menu_registro.FlatAppearance.BorderSize = 0;
+            this.menu_registro.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(61)))), ((int)(((byte)(151)))));
+            this.menu_registro.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(20)))), ((int)(((byte)(75)))));
+            this.menu_registro.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.menu_registro.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.menu_registro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.menu_registro.Image = global::PosLyon.Properties.Resources.regede;
+            this.menu_registro.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.menu_registro.Location = new System.Drawing.Point(0, 223);
+            this.menu_registro.Name = "menu_registro";
+            this.menu_registro.Size = new System.Drawing.Size(276, 60);
+            this.menu_registro.TabIndex = 5;
+            this.menu_registro.Text = "Registro";
+            this.menu_registro.UseVisualStyleBackColor = false;
+            this.menu_registro.Visible = false;
+            this.menu_registro.Click += new System.EventHandler(this.menu_registro_Click);
+            // 
+            // menu_stock
+            // 
+            this.menu_stock.AutoSize = true;
+            this.menu_stock.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(5)))), ((int)(((byte)(33)))));
+            this.menu_stock.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.menu_stock.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(20)))), ((int)(((byte)(75)))));
+            this.menu_stock.FlatAppearance.BorderSize = 0;
+            this.menu_stock.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(61)))), ((int)(((byte)(151)))));
+            this.menu_stock.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(20)))), ((int)(((byte)(75)))));
+            this.menu_stock.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.menu_stock.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.menu_stock.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.menu_stock.Image = global::PosLyon.Properties.Resources.stock;
+            this.menu_stock.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.menu_stock.Location = new System.Drawing.Point(0, 163);
+            this.menu_stock.Name = "menu_stock";
+            this.menu_stock.Size = new System.Drawing.Size(276, 60);
+            this.menu_stock.TabIndex = 4;
+            this.menu_stock.Text = "Stock";
+            this.menu_stock.UseVisualStyleBackColor = false;
+            this.menu_stock.Visible = false;
+            this.menu_stock.Click += new System.EventHandler(this.menu_stock_Click);
+            // 
+            // menu_venta
+            // 
+            this.menu_venta.AutoSize = true;
+            this.menu_venta.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(5)))), ((int)(((byte)(33)))));
+            this.menu_venta.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.menu_venta.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(20)))), ((int)(((byte)(75)))));
+            this.menu_venta.FlatAppearance.BorderSize = 0;
+            this.menu_venta.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(61)))), ((int)(((byte)(151)))));
+            this.menu_venta.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(20)))), ((int)(((byte)(75)))));
+            this.menu_venta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.menu_venta.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.menu_venta.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.menu_venta.Image = global::PosLyon.Properties.Resources.vventa;
+            this.menu_venta.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.menu_venta.Location = new System.Drawing.Point(0, 103);
+            this.menu_venta.Name = "menu_venta";
+            this.menu_venta.Size = new System.Drawing.Size(276, 60);
+            this.menu_venta.TabIndex = 3;
+            this.menu_venta.Text = "Venta";
+            this.menu_venta.UseVisualStyleBackColor = false;
+            this.menu_venta.Visible = false;
+            this.menu_venta.Click += new System.EventHandler(this.menu_venta_Click);
+            // 
+            // menu_compra
+            // 
+            this.menu_compra.AutoSize = true;
+            this.menu_compra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(5)))), ((int)(((byte)(33)))));
+            this.menu_compra.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.menu_compra.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(20)))), ((int)(((byte)(75)))));
+            this.menu_compra.FlatAppearance.BorderSize = 0;
+            this.menu_compra.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(61)))), ((int)(((byte)(151)))));
+            this.menu_compra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(102)))), ((int)(((byte)(20)))), ((int)(((byte)(75)))));
+            this.menu_compra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.menu_compra.Font = new System.Drawing.Font("Microsoft YaHei UI", 15.75F, System.Drawing.FontStyle.Bold);
+            this.menu_compra.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.menu_compra.Image = global::PosLyon.Properties.Resources.carrito_de_compras;
+            this.menu_compra.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.menu_compra.Location = new System.Drawing.Point(0, 43);
+            this.menu_compra.Name = "menu_compra";
+            this.menu_compra.Size = new System.Drawing.Size(276, 60);
+            this.menu_compra.TabIndex = 2;
+            this.menu_compra.Text = "Compra";
+            this.menu_compra.UseVisualStyleBackColor = false;
+            this.menu_compra.Visible = false;
+            this.menu_compra.Click += new System.EventHandler(this.menu_compra_Click);
+            // 
+            // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 593);
+            this.Controls.Add(this.menu_usuario);
+            this.Controls.Add(this.menu_proveedor);
+            this.Controls.Add(this.menu_cliente);
+            this.Controls.Add(this.menu_categoria);
+            this.Controls.Add(this.bindingNavigator1);
             this.Controls.Add(this.menu_producto);
             this.Controls.Add(this.lblusuario);
             this.Controls.Add(this.label1);
@@ -402,10 +630,13 @@
             this.Controls.Add(this.menu_compra);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Main";
+            this.Name = "frmMain";
             this.Text = "Inicio";
             this.Load += new System.EventHandler(this.Inicio_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
+            this.bindingNavigator1.ResumeLayout(false);
+            this.bindingNavigator1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -432,5 +663,21 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblusuario;
         private System.Windows.Forms.Button menu_producto;
+        private System.Windows.Forms.BindingNavigator bindingNavigator1;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
+        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
+        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
+        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
+        private System.Windows.Forms.Button menu_categoria;
+        private System.Windows.Forms.Button menu_cliente;
+        private System.Windows.Forms.Button menu_proveedor;
+        private System.Windows.Forms.Button menu_usuario;
     }
 }

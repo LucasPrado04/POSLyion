@@ -1,6 +1,6 @@
 ﻿namespace PosLyon
 {
-    partial class registro
+    partial class frmRegistro
     {
         /// <summary>
         /// Required designer variable.

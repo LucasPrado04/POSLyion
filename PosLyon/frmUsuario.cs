@@ -10,21 +10,11 @@ using System.Windows.Forms;
 
 namespace PosLyon
 {
-    public partial class Compra : Form
+    public partial class frmUsuario : Form
     {
-        public Compra()
+        public frmUsuario()
         {
             InitializeComponent();
-        }
-
-        private void minim_Click(object sender, EventArgs e)
-        {
-            WindowState = FormWindowState.Minimized;
-        }
-
-        private void cerrar_Click(object sender, EventArgs e)
-        {
-            Close();
         }
     }
 }
