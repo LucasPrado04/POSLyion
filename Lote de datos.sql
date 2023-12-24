@@ -22,3 +22,25 @@ INSERT INTO Producto VALUES
 INSERT INTO Proveedor VALUES
 ('Arcor', 'arcor@hotmail.com', '3794111111', 1, default),
 ('Quilmes', 'quilmes@outlook.com', '3974222222', 0, default)
+
+/*
+ Permisos de Administrador (todos los menús) 
+*/
+INSERT INTO Permiso(id_rol, nombre_menu) VALUES
+(1, 'menu_usuarios'),
+(1, 'menu_productos'),
+(1, 'menu_ventas'),
+(1, 'menu_compras'),
+(1, 'menu_clientes'),
+(1, 'menu_proveedores'),
+(1, 'menu_reportes')
+
+/*
+ Permisos de Cajero
+*/
+INSERT INTO Permiso(id_rol, nombre_menu) VALUES
+(1, 'menu_ventas'),
+(1, 'menu_compras'),
+(1, 'menu_clientes'),
+(1, 'menu_proveedores')
+

@@ -318,6 +318,7 @@
             this.maxim.Size = new System.Drawing.Size(35, 34);
             this.maxim.TabIndex = 9;
             this.maxim.UseVisualStyleBackColor = true;
+            this.maxim.Visible = false;
             this.maxim.Click += new System.EventHandler(this.maxim_Click);
             // 
             // cerrar
