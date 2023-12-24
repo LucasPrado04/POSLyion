@@ -28,7 +28,7 @@ namespace PosLyon
                 MessageBox.Show("No se encontró el usuario", "Mensaje", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
 
             } else {
-                Main form = new Main();
+                Main form = new Main(usuario);
                 form.Show();
                 this.Hide();
                 form.FormClosing += frm_closing;
