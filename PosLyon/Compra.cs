@@ -10,21 +10,21 @@ using System.Windows.Forms;
 
 namespace PosLyon
 {
-    public partial class Inicio : Form
+    public partial class Compra : Form
     {
-        public Inicio()
+        public Compra()
         {
             InitializeComponent();
         }
 
-        private void Inicio_Load(object sender, EventArgs e)
+        private void minim_Click(object sender, EventArgs e)
         {
-
+            WindowState = FormWindowState.Minimized;
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
+        private void cerrar_Click(object sender, EventArgs e)
         {
-
+            Close();
         }
     }
 }
