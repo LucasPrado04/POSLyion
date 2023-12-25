@@ -9,47 +9,42 @@ using System.Threading.Tasks;
 
 namespace CapaDatos
 {
-    public class CD_Permiso
+    public class CD_Rol
     {
-        public List<Permiso> Listar(int id_usuario)
+        public List<Rol> Listar()
         {
-            List<Permiso> lista = new List<Permiso>();
+            List<Rol> lista = new List<Rol>();
             // Se establece conexión con la base de datos
             using (SqlConnection con = new SqlConnection(Conexion.cadena))
             {
                 try
                 {
                     // Se crea la cadena de consulta
-                    StringBuilder query = new StringBuilder();
-                    query.AppendLine("SELECT permiso.id_rol, nombre_menu FROM Permiso");
-                    query.AppendLine("INNER JOIN Rol ON permiso.id_rol = rol.id_rol");
-                    query.AppendLine("INNER JOIN Usuario ON usuario.id_rol = rol.id_rol");
-                    query.AppendLine("WHERE usuario.id_usuario = @id_usuario");
+                    string consulta = "SELECT id_rol, descripcion FROM Rol";
                     // Se crea el comando que recibe como parámetro la consulta y la cadena de conexión de la base de datos
-                    SqlCommand cmd = new SqlCommand(query.ToString(), con);
+                    SqlCommand cmd = new SqlCommand(consulta, con);
                     // Se especifica que el comando es de tipo texto
-                    cmd.Parameters.AddWithValue("@id_usuario", id_usuario);
                     cmd.CommandType = CommandType.Text;
                     // Se abre la conexión con la base de datos y se envía la consulta
                     con.Open();
                     using (SqlDataReader reader = cmd.ExecuteReader())
                     {
-                        // Mientras lee cada uno de los registros de la tabla Permiso, realiza:
+                        // Mientras lee cada uno de los registros de la tabla Rol, realiza:
                         while (reader.Read())
                         {
-                            // Crea un nuevo objeto de tipo Perimso por cada registro con sus atributos
-                            lista.Add(new Permiso()
+                            // Crea un nuevo objeto de tipo Rol por cada registro con sus atributos
+                            lista.Add(new Rol()
                             {
-                                Rol = new Rol() { id_rol = Convert.ToInt32(reader["id_rol"]) },
-                                nombre_menu = reader["nombre_menu"].ToString()
-                            }); ;
+                                id_rol = Convert.ToInt32(reader["id_rol"]),
+                                descripcion = reader["descripcion"].ToString()
+                            });
                         }
                     }
                 }
                 catch (Exception ex)
                 {
                     // Si la conexión con la base de datos no fue exitosa, se crea y se retorna una lista vacía
-                    lista = new List<Permiso>();
+                    lista = new List<Rol>();
                 }
             }
             return lista;
