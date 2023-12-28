@@ -19,7 +19,7 @@ BEGIN
 			Usuario(dni, nombre_completo, email, clave, id_rol, estado) 
 		VALUES
 			(@dni, @nombre_completo, @email, @clave, @id_rol, @estado)
-		/* Usa de forma automática el id_usuario si se insertó correctamente */
+		/* Retorna el id_usuario generado automaticamente */
 		SET
 			@id_usuario_resultado = SCOPE_IDENTITY()		
 	END
