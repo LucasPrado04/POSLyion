@@ -10,7 +10,7 @@ namespace CapaEntidad
         public int id_producto { get; set; }
         public string codigo { get; set; }
         public string descripcion { get; set; }
-        public Categoria Categoria { get; set; }
+        public Categoria categoria { get; set; }
         public int stock { get; set; }
         public decimal precio_costo { get; set; }
         public decimal precio_venta { get; set; }
