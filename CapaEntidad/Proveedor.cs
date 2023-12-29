@@ -8,7 +8,8 @@ namespace CapaEntidad
 {
     public class Proveedor {
         public int id_proveedor { get; set; }
-        public string descripcion { get; set; }
+        public string cuit { get; set; }
+        public string razon_social { get; set; }
         public string email { get; set; }
         public string telefono { get; set; }
         public bool estado { get; set; }

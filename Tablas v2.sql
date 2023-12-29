@@ -42,9 +42,10 @@ GO
 
 CREATE TABLE Proveedor (
   id_proveedor INT IDENTITY(1, 1) NOT NULL,
-  descripcion VARCHAR(100) NOT NULL,
-  email VARCHAR(155) NOT NULL,
-  telefono VARCHAR(60) NOT NULL,
+  cuit VARCHAR(40) NULL,
+  razon_social VARCHAR(100) NOT NULL,
+  email VARCHAR(155) NULL,
+  telefono VARCHAR(60) NULL,
   estado BIT NOT NULL,
   fecha_registro DATETIME DEFAULT GETDATE() NOT NULL
   CONSTRAINT PK_id_proveedor PRIMARY KEY (id_proveedor)
@@ -53,21 +54,21 @@ GO
 
 CREATE TABLE Cliente (
   id_cliente INT IDENTITY(1, 1) NOT NULL,
+  dni VARCHAR(30) NOT NULL,
   nombre_completo VARCHAR(100) NOT NULL,
-  email VARCHAR(155) NOT NULL,
-  telefono VARCHAR(60) NOT NULL,
+  email VARCHAR(155) NULL,
+  telefono VARCHAR(60) NULL,
   estado BIT NOT NULL,
-  fecha_registro DATETIME DEFAULT GETDATE() NOT NULL,
-  dni VARCHAR(12) NOT NULL,
+  fecha_registro DATETIME DEFAULT GETDATE() NOT NULL
   CONSTRAINT PK_id_cliente PRIMARY KEY (id_cliente)
 );
 GO
 
 CREATE TABLE Usuario (
   id_usuario INT IDENTITY(1, 1) NOT NULL,
-  dni VARCHAR(12) NOT NULL,
+  dni VARCHAR(30) NOT NULL,
   nombre_completo VARCHAR(100) NOT NULL,
-  email VARCHAR(155) NOT NULL,
+  email VARCHAR(155) NULL,
   clave VARCHAR(155) NOT NULL,
   id_rol INT NOT NULL,
   estado BIT NOT NULL,

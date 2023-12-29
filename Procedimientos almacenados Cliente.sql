@@ -5,7 +5,7 @@ GO
 /* Agregar un cliente */
 CREATE PROC Agregar_Cliente(
 @nombre_completo VARCHAR(100),
-@dni VARCHAR(12),
+@dni VARCHAR(30),
 @email VARCHAR(155),
 @telefono VARCHAR(60),
 @estado BIT,
@@ -32,7 +32,7 @@ GO
 CREATE PROC Editar_Cliente(
 @id_cliente INT,
 @nombre_completo VARCHAR(100),
-@dni VARCHAR(12),
+@dni VARCHAR(30),
 @email VARCHAR(155),
 @telefono VARCHAR(60),
 @estado BIT,

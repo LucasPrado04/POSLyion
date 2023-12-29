@@ -1,12 +1,7 @@
-SELECT id_producto, codigo, producto.descripcion, stock, precio_costo, precio_venta, producto.estado, categoria.id_categoria, categoria.descripcion[DescripcionCategoria] FROM Producto
-INNER JOIN Categoria ON categoria.id_categoria = producto.id_categoria
-
 /* Agregar un producto */
 DECLARE @resultado INT
 DECLARE @mensaje VARCHAR(500)
 GO
-
-SELECT * FROM Producto
 
 CREATE PROC Agregar_Producto(
 	@codigo VARCHAR(60),

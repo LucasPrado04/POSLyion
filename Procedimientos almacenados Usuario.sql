@@ -1,6 +1,6 @@
 /* Agregar un usuario */
 CREATE PROC Agregar_Usuario (
-	@dni VARCHAR(12),
+	@dni VARCHAR(30),
 	@nombre_completo VARCHAR(100),
 	@email VARCHAR(155),
 	@clave VARCHAR(155),
@@ -26,21 +26,12 @@ BEGIN
 	ELSE
 		SET @Mensaje = 'Un usuario ya tiene este número de documento registrado'
 END
-
-/* TEST AGREGAR_USUARIO */
-DECLARE @id_usuario_generado int
-DECLARE @mensaje VARCHAR(500)
-
-EXEC Agregar_Usuario '00000000', 'usuario_prueba', 'test@gmail.com', '456', 2, 1, @id_usuario_generado OUTPUT, @mensaje OUTPUT
-
-SELECT @id_usuario_generado
-SELECT @mensaje
 GO
 
 /* Editar un usuario */
 CREATE PROC Editar_Usuario (
 	@id_usuario INT,
-	@dni VARCHAR(12),
+	@dni VARCHAR(30),
 	@nombre_completo VARCHAR(100),
 	@email VARCHAR(155),
 	@clave VARCHAR(155),
@@ -70,15 +61,6 @@ BEGIN
 	ELSE
 		SET @Mensaje = 'Un usuario ya tiene este número de documento registrado'
 END
-
-/* TEST EDITAR_USUARIO */
-DECLARE @respuesta BIT
-DECLARE @mensaje VARCHAR(500)
-
-EXEC Editar_Usuario 4, '43274484', 'usuario_prueba2', 'test2@gmail.com', '567', 2, 1, @respuesta OUTPUT, @mensaje OUTPUT
-
-SELECT @respuesta
-SELECT @mensaje
 GO
 
 /* Eliminar un usuario */
