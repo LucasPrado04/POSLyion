@@ -131,3 +131,13 @@ CREATE TABLE Venta_Detalle (
   CONSTRAINT FK_Venta_Producto FOREIGN KEY (id_producto) REFERENCES Producto(id_producto)
 );
 GO
+
+CREATE TABLE Datos_Negocio (
+	id INT NOT NULL,
+	nombre VARCHAR(60) NOT NULL,
+	cuit VARCHAR(40) NULL,
+	direccion VARCHAR(100) NULL,
+	logo VARBINARY(MAX) NULL
+	CONSTRAINT PK_id_datos_negocio PRIMARY KEY (id)
+)
+GO

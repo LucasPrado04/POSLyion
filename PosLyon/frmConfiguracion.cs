@@ -16,5 +16,11 @@ namespace PosLyon
         {
             InitializeComponent();
         }
+
+        private void btnDatos_Negocio_Click(object sender, EventArgs e)
+        {
+            frmNegocio frmNegocio = new frmNegocio();
+            frmNegocio.Show();
+        }
     }
 }

@@ -45,6 +45,7 @@
     <Compile Include="Cliente.cs" />
     <Compile Include="Compra.cs" />
     <Compile Include="Compra_Detalle.cs" />
+    <Compile Include="Datos_Negocio.cs" />
     <Compile Include="Permiso.cs" />
     <Compile Include="Producto.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
